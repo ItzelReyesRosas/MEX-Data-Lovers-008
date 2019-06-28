@@ -63,11 +63,13 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 **Recibimos dos comentarios acerca de nuestra encuesta.**
 **El primero...**
 
-<img src="src/Imagenes/FeedBack3.png">
+<img src="src/Imagenes/Feedback3.png">
 
 **El segundo...**
 
-![](src/Imagenes/Feedback2.png)
+
+<img src="src/Imagenes/feedback2.png">
+
 
 **Como se puede notar, las necesidades de los usuarios son los IV, datos que tampoco proporciona la app POKÉMON GO.**
 
