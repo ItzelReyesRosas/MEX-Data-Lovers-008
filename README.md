@@ -7,12 +7,12 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 
 **Nos descargamos la app Pokémon Go y  salimos a cazar pokemones… ¡gajes del oficio!. La finalidad era familiarizarnos  y conocer la dinámica del juego.**
 
-<img src="src/Imagenes/ItzelYPokemon.jpg" width=400> 
-<img src="src/Imagenes/SofiaYPokemon.jpg" width=400>
+<img src="src/Imagenes/ItzelYPokemon.jpg"> 
+<img src="src/Imagenes/SofiaYPokemon.jpg">
 
 **Para acercarnos a los usuarios nos integramos a tres comunidades de jugadores de Pokémon GO en Facebook.**
 
-<img src="src/Imagenes/ComunidadesFB.png" width=400>
+<img src="src/Imagenes/ComunidadesFB.png">
 
 **Además hicimos una misión exploratoria a la Alameda Central de la CDMX, ahí realizamos dos entrevistas que nos dieron un punto de partida, nuestros informantes fueron muy claros con sus necesidades.**
 
@@ -28,15 +28,15 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 
 **Ahora que ya teníamos de dónde partir, contrastamos la data proporcionada en el archivo src con lo mostrado en la interfaz del juego.**
 
-<img src="src/Imagenes/Datos.png" width=700>
+<img src="src/Imagenes/Datos.png">
 
 **Al revisar la data que se nos proporcionó y las necesidades que detectamos en las entrevistas… !Oh sorpresa! Nos dimos cuenta de que no se ajustaban,fue entonces que hicimos un poco de investigación en blogs y videos de youtube donde confirmamos que las necesidades que se expresaron en las entrevistas eran generalizadas. En este punto investigamos qué herramientas proporcionan una resolución a esas sugerencias, encontramos dos aplicaciones para Android y una para IOS, sin embargo ninguna de ellas compara los valores de los pokemones.**
 
-<img src="src/Imagenes/appsIV.png" width=150>
+<img src="src/Imagenes/appsIV.png">
 
 **Estas aplicaciones te proporcionan el IV a partir del Poder de Combate (PC) y los Puntos de Salud (PS) de cada pokémon, ambos datos sí los proporciona la app POKÉMON GO sin embargo no están dentro de la data proporcionada en el src del proyecto Data Lovers.**
 
-<img src="src/Imagenes/AppIV.png" width=700>
+<img src="src/Imagenes/AppIV.png">
 
 **En este punto teníamos dos opciones, meter los datos de los 151 pokemones manualmente nosotras o restringirnos a la data proporcionada. Por cuestiones de tiempo … y de salud mental optamos por la segunda.**
 
@@ -52,7 +52,7 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 
 **Teniendo esto en mente lanzamos nuestra encuesta a las comunidades de FB, decidimos que permanecería abierta desde el martes 25 de junio a las 6pm hasta el miércoles 26 de junio a la 10am.**
 
-<img src="src/Imagenes/EncuestaPokemon.png" width=800>
+<img src="src/Imagenes/EncuestaPokemon.png">
 
 **La respuesta fue muy positiva en las comunidades de FB, incluso una de las administradoras compartió nuestra encuesta por grupos de WhatsApp, además nos agregó en un grupo de puras mujeres jugadoras de POKÉMON GO.**
 
@@ -63,7 +63,7 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 **Recibimos dos comentarios acerca de nuestra encuesta.**
 **El primero...**
 
-<img src="src/Imagenes/FeedBack3.png" width=400>
+<img src="src/Imagenes/FeedBack3.png">
 
 **El segundo...**
 
@@ -78,30 +78,37 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 **Rangos de edad**
 
 
-<img src="src/Imagenes/edades.png" width=700>
+<img src="src/Imagenes/edades.png">
 
 **Aquí podemos ver dos bloques bien diferenciados, el primero que va de los  18 a los 24 años y el segundo de los 28 a los 30, hay un dato que parece resolver el misterio de la edad de Chabelo al afirmar que tiene 9 mil años  (aún por confirmar).**
 
 **Género**
 
-<img src="src/Imagenes/genero.png" width=700>
+<img src="src/Imagenes/genero.png">
 
 **Predominantemente jugado por hombres.**
 **Características principales de un pokémon**
 
-<img src="src/Imagenes/caracteristicas.png" width=700>
+<img src="src/Imagenes/caracteristicas.png">
 
 **Para los encuestados el tipo de pokemón, su  evolución y sus debilidades son las características más importantes.**
 
 **Comparación**
 
-<img src="src/Imagenes/comparacion.png" width=700>
+<img src="src/Imagenes/comparacion.png">
 
 **Respecto a lo que les gustaría comparar, los datos coinciden con las características más importantes; el tipo, la evolución y las debilidades.**
 
 ## ¿QUÉ PROPONEMOS AHORA?
 
 **Con las entrevistas, las encuestas y nuestra experiencia jugando seguimos con nuestra propuesta inicial de crear una web que permita visualizar las tres características más importantes de un pokémon (que tenemos disponibles) y hacer una comparación (éste es un cálculo agregado?) entre los mismos.**
+
+## HISTORIAS DE USUARIO
+
+**A continuación mostramos nuestro proceso para crear las historias de usuario, qué tarea épica nos crea y cuál sería la definition of done.**
+
+<img src="src/Imagenes/historiaUsuario.jpg">
+
 
 ## ANÁLISIS DE LA COMPETENCIA
 
@@ -112,11 +119,11 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 [Veekun] (https://veekun.com/dex/gadgets/compare_pokemon)
 
 
-<img src="src/Imagenes/comparacion1.png" width=600>
+<img src="src/Imagenes/comparacion1.png">
 
 [Psypoke] (http://www.psypokes.com/dex/compare.php) 
 
-<img src="src/Imagenes/comparacion2.png" width=600>
+<img src="src/Imagenes/comparacion2.png" >
 
 
 ## ¿CUÁL ES EL PROBLEMA Y CÓMO RESOLVEMOS EL PROBLEMA?
@@ -127,17 +134,22 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 
 **En la primer página web se necesitaron tres capturas de pantalla para visualizar todo el contenido**
 
-<img src="src/Imagenes/compare1.png" width=300>
-<img src="src/Imagenes/compare2.png" width=300>
-<img src="src/Imagenes/compare3.png" width=300>
+<img src="src/Imagenes/compare1.png">
+<img src="src/Imagenes/compare2.png">
+<img src="src/Imagenes/compare3.png">
 
 
 **En la segunda página web también se necesitaron tres capturas de pantalla…**
 
-<img src="src/Imagenes/compare4.png" width=300>
-<img src="src/Imagenes/compare5.png" width=300>
-<img src="src/Imagenes/compare7.png" width=300>
+<img src="src/Imagenes/compare4.png">
+<img src="src/Imagenes/compare5.png">
+<img src="src/Imagenes/compare7.png">
 
 **Como se puede observar no se observa nada.**
 
 **Nuestra propuesta resuelve el problema de la visualización de datos al solo mostrar los más relevantes para el usuario, tanto para un pokémon de forma individual como al hacer la comparativa.**
+
+
+## WIREFRAMING!
+
+<img src="src/Imagenes/wireframing.jpg">
