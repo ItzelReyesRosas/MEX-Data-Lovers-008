@@ -155,3 +155,64 @@ El primer paso fue elegir el tema , el que más nos llamó la atención fue Poke
 ## WIREFRAMING!
 
 <img src="src/Imagenes/wireframing.jpg">
+
+## PROTOTIPO BAJA FIDELIDAD 
+
+**Para hacer este prototipo utilizamos la herramienta marvel.**
+
+https://marvelapp.com/54dd82c/screen/58742576 
+
+# CHECKLIST
+### Contenido de referencia
+## Diseño de experiencia de usuario (User Experience Design)
+
+- [x] Investigación con usuarios / entrevistas
+- [ ] Principios de diseño visual
+
+## Desarrollo Front-end
+
+- [ ] Unidad de testing en curso de JavaScript en LMS.
+- [ ] Unidad de arreglos en curso de JavaScript en LMS.
+- [ ] Unidad de objetos en curso de JavaScript en LMS.
+- [x] Unidad de funciones en curso de JavaScript en LMS.
+- [ ] Unidad de DOM en curso de Browser JavaScript en LMS.
+- [ ] Array en MDN
+- [ ] Array.sort en MDN
+- [ ] Array.map en MDN
+- [ ] Array.filter en MDN
+- [ ] Array.reduce en MDN
+- [ ] Array.forEach en MDN
+- [ ] Object.keys en MDN
+- [ ] Object.entries en MDN
+- [ ] Fetch API en MDN
+- [ ] json.org
+
+## Herramientas
+
+- [X] Git
+- [X] GitHub
+- [X] GitHub Pages
+- [ ] Node.js
+- [ ] Jest
+
+## Checklist
+
+- [ ] Usa VanillaJS.
+- [ ] No hace uso de this.
+- [ ] Pasa linter (npm pretest)
+- [ ] Pasa tests (npm test)
+- [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
+- [ ] Incluye Definición del producto clara e informativa en README.md.
+- [ ] Incluye historias de usuario en README.md.
+- [X] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
+- [ ] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
+- [ ] Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
+- [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
+- [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
+- [ ] UI: Permite filtrar data en base a una condición.
+
+## Checklist (Hacker Edition)
+
+- [ ] Consume data de forma dinámica (fetch()).
+- [ ] Utiliza Librerías de graficas (chart.js ó google chart).
+- [ ] Cobertura de coverage al 100%.
