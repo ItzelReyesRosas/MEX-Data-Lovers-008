@@ -1,64 +1,87 @@
-let nameAndImg = POKEMON.pokemon
+const pokemonData = POKEMON.pokemon
+//console.log(pokemonData)
 
-/*array vacio 
-let classes = */ 
+window.onload = () => {
 
-nameAndImg.forEach( (poke) => {
+const allData = pokemonData.forEach( (poke) => {
+  var elementJoinData =  document.createElement("div");
+  var pokeArray = [poke.name,"img",poke.type];
 
-      let element = document.createElement("p"); //creamos elemento en el DOM
-      element.setAttribute("class", "pokemonData");
-      let contentName = document.createTextNode(poke.name); // creamos el contenido del elemento
-      let contentHeight = document.createTextNode(poke.height);
-      let contentWeight = document.createTextNode(poke.weight);
-            
-      /*append*/
-      element.appendChild(contentName); //añadimos el nodo de texto al elemento
-     
-      for(var i = 0; i < poke.type.length; i++) {
-        let contentType = document.createTextNode(poke.type[i]);
-        element.appendChild(contentType);
-        
-      }
+for (var index = 0; index < pokeArray.length; index++) {
+  
+        if (pokeArray[index]==="img"){
+                  
+          var pokeElement = document.createElement("img");
+          pokeElement.setAttribute("src", poke.img);
+          pokeElement.setAttribute("class","pokeImg" )
+        }else {
+          var pokeElement = document.createElement("p");
+          pokeElement.setAttribute("class", "pokeName");
+        }  
+          let pokeContent = document.createTextNode(pokeArray[index]);
+          pokeElement.appendChild(pokeContent);
+          elementJoinData.appendChild(pokeElement);
+          document.getElementById("showPokemons")
+                                  .appendChild(elementJoinData);
+}
 
-      
-      element.appendChild(contentHeight);
-      element.appendChild(contentWeight);
-      
-      for(var i = 0; i < poke.weaknesses.length; i++){
-        let contentWeaknesses = document.createTextNode(poke.weaknesses[i]);
-        element.appendChild(contentWeaknesses);
-        
-       }
 
-      document.getElementById("showPokemons").appendChild(element);
-     
-      let elementImage = document.createElement("img");
-      let contentImage = document.createTextNode(poke.img);
-      elementImage.setAttribute("src", poke.img);
-      elementImage.appendChild(contentImage);
-      document.getElementById("showPokemons").appendChild(elementImage);
-
-     
 });
+}
 
 
+const createNodes = (place) => {
+ /* console.log("holi nodos");
+  console.log(place[0]);
+  console.log(place.length);*/
+  let keyExtraction = Object.keys(place[0])
+  let valueExtraction = Object.values(place[0])
+  var searchPokemonCard = document.createElement("div");
+
+  for (let i = 0; i < keyExtraction.length; i++) {
+  //console.log(classExtraction[i]);
+                  if (keyExtraction[i]==="img") {
+                    //console.log(classExtraction[i]);   
+                    var element = document.createElement("img"); 
+                    element.setAttribute("src",valueExtraction[i]);
+                    element.setAttribute("class", keyExtraction[i]+ "en");
+
+                  } else {
+                    //console.log("holi else");  
+                    var element = document.createElement("p");
+                    element.setAttribute("class",keyExtraction[i]);
+                  }         
+         
+         let content = document.createTextNode(keyExtraction[i]    +  ": "  +
+                                                    valueExtraction[i]);          
+          element.appendChild(content); 
+          searchPokemonCard.appendChild(element);
+
+          document.getElementById("showFilteredPokemon").appendChild(searchPokemonCard);           
+  }
+
+}
 
 
+const showPokemonFiltered = () => {
+      let searchedPokemon = document.getElementById("pokemonName").value;
+      //console.log(searchedPokemon);       
+      let searchedPokemonConverted = searchedPokemon[0]               .toUpperCase() +
+                                     searchedPokemon.slice(1)         .toLowerCase()
+      //console.log(searchedPokemonConverted)    
+      var filteredPokemon = pokemonData
+                                    .filter(      (filtered) => {
+                                                                return filtered.name === searchedPokemonConverted;
+                                                                })      
+      //console.log(filteredPokemon[0].egg);  
+      event.preventDefault();       
+      createNodes(filteredPokemon);    
+// console.log(filteredPokemon); 
+    
+}
+
+const filtrarPokemon =document.getElementById("searchPokemon");
+filtrarPokemon.addEventListener("click",showPokemonFiltered);
 
 
-
-
-
-
-
-/* fetch("https://gist.github.com/sofiamejiamuro/133498500fc0354c7903fa86cc111456.js") 
-.then(function(resp) {
-  return resp.json(); //Convierte 
-
-}).then(function(data) {
-console.log(data);
-
-}).catch(function(error){
-console.error("Something went wrong with retrieving the pokemons");
-
-});*/
+document.body.appendChild(elementJoinData);

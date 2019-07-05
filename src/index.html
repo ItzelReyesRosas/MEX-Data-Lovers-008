@@ -4,25 +4,40 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css"/>
+   
   </head>
 
 
 
   <body>
-    
   
-  <div id="showPokemons">
-    
-  </div>
+   <div class="header">
+      <h1>POKÉMON</h1>
+    </div>
+
+  <form>
+    <label for="pokemonName">Busca a tu pokemon</label>
+    <input type="text" id="pokemonName" placeholder="Escribe el nombre de tu pokemon"  value="">
+    <button id="searchPokemon">BUSCAR</button>
+  </form> 
+
+  <!--CONTENEDOR DEL GRID Y TODOS LOS ELEMENTOS DENTRO VAN A FUNCIONAR COMO CELDAS-->
+  <!--hacer menu de anvorguesa-->  
+  <!--hacer botones de filtrado-->
+
+  <!--section de pokemon buscado-->
+  <section id="showFilteredPokemon"></section>
+ 
+
+  <section id="showPokemons"></section>
 
 
-
-    <!--SCRIPTS-->
-    
-
+  <!--SCRIPTS-->
   <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
   <script type="text/javascript" src="data.js"></script>
   <script type="text/javascript" src="main.js"></script>
+  
+
   
 </body>
 </html>
