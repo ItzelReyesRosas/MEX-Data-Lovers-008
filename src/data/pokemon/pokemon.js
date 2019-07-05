@@ -1,4 +1,5 @@
 var POKEMON = {
+  
   "pokemon": [{
     "id": 1,
     "num": "001",
@@ -30,7 +31,16 @@ var POKEMON = {
       "num": "003",
       "name": "Venusaur"
     }]
-  }, {
+  }, 
+  
+  
+  
+  
+  
+  
+  
+  
+  {
     "id": 2,
     "num": "002",
     "name": "Ivysaur",
