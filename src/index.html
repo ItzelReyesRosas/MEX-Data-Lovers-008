@@ -11,25 +11,32 @@
 
   <body>
   
-   <div class="header">
-      <h1>POKÉMON</h1>
-    </div>
+   <header class="header">
+      <h1>POKÉMON</h1>  
+      <nav> <!--hacer menu de anvorguesa-->  </nav>
+   </header>
 
-  <form>
-    <label for="pokemonName">Busca a tu pokemon</label>
-    <input type="text" id="pokemonName" placeholder="Escribe el nombre de tu pokemon"  value="">
-    <button id="searchPokemon">BUSCAR</button>
-  </form> 
+  <section>
 
-  <!--CONTENEDOR DEL GRID Y TODOS LOS ELEMENTOS DENTRO VAN A FUNCIONAR COMO CELDAS-->
-  <!--hacer menu de anvorguesa-->  
-  <!--hacer botones de filtrado-->
+        <form>
+              <label for="pokemonName">Busca a tu pokemon</label>
+              <input type="text" id="pokemonName" placeholder="Escribe el nombre de tu pokemon"  value="" required>
+              <button id="searchPokemon">BUSCAR</button>
+        </form> 
+        <!--hacer botones de filtrado-->
+        <!--BOTON RESEAT-->
 
-  <!--section de pokemon buscado-->
-  <section id="showFilteredPokemon"></section>
- 
 
-  <section id="showPokemons"></section>
+        <!--CONTENEDOR DEL GRID Y TODOS LOS ELEMENTOS DENTRO VAN A FUNCIONAR COMO CELDAS--> 
+        
+        <!--section de pokemon buscado-->
+        
+              <section id="showFilteredPokemon"></section>
+
+              <section id="showPokemons"></section>
+        
+  </section>
+
 
 
   <!--SCRIPTS-->
@@ -38,6 +45,5 @@
   <script type="text/javascript" src="main.js"></script>
   
 
-  
 </body>
 </html>
