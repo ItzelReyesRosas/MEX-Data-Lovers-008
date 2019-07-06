@@ -1,7 +1,7 @@
 const pokemonData = POKEMON.pokemon
 
 console.log("holi");  
-// SHOW DATA FUNCTION
+// SHOW DATA FUNCTION ya está
 window.onload = () => {
 
 const allData = pokemonData.forEach( (poke) => {
@@ -33,6 +33,7 @@ const allData = pokemonData.forEach( (poke) => {
 
 window.onload()
 
+
 // SORT FUNCTION
 const sortedBySpawnProbability = pokemonData.sort( (a,b) => {
      
@@ -45,29 +46,28 @@ const sortedBySpawnProbability = pokemonData.sort( (a,b) => {
       
  });
 
- const createNodes2 = sortedBySpawnProbability.forEach( (poke) => {
-  var elementJoinData =  document.createElement("div");
-  elementJoinData.setAttribute("class","singlePokemon");
-  var pokeArray = [poke.name,"img",poke.type];
+const createNodes2 = sortedBySpawnProbability.forEach( (poke2) => {
+      var elementJoinSortedData =  document.createElement("div");
+      elementJoinSortedData.setAttribute("class","singleSortedPokemon");
+      var pokeArray2 = [poke2.name,"img",poke2.spawn_chance];
 
-for (var i = 0; i < pokeArray.length; i++) {
+for (var i = 0; i < pokeArray2.length; i++) {
   
-        if (pokeArray[index]==="img"){
+        if (pokeArray2[i]==="img"){
                   
-          var pokeElement = document.createElement("img");
-          pokeElement.setAttribute("src", poke.img);
-          pokeElement.setAttribute("class","pokeImg" )
+          var pokeSortedElement = document.createElement("img");
+          pokeSortedElement.setAttribute("src", poke2.img);
+          pokeSortedElement.setAttribute("class","pokeSortedImg" )
         }else {
-          var pokeElement = document.createElement("p");
-          pokeElement.setAttribute("class", "pokeName");
+          var pokeSortedElement = document.createElement("p");
+          pokeSortedElement.setAttribute("class", "pokeSortedName");
         }  
-          let pokeContent = document.createTextNode(pokeArray[i]);
-          pokeElement.appendChild(pokeContent);
-          elementJoinData.appendChild(pokeElement);
-          document.getElementById("showPokemons")
-                                  .appendChild(elementJoinData);
+          let pokeSortedContent = document.createTextNode(pokeArray2[i]);
+          pokeSortedElement.appendChild(pokeSortedContent);
+          elementJoinSortedData.appendChild(pokeSortedElement);
+          document.getElementById("showSortedPokemons")
+                                  .appendChild(elementJoinSortedData);
 }
-
 
 });
 
@@ -99,7 +99,7 @@ const createNodes = (place) => {
           element.appendChild(content); 
           searchPokemonCard.appendChild(element);
 
-          document.getElementById("showFilteredPokemon").appendChild(searchPokemonCard);           
+          document.getElementById("showFilteredPokemons").appendChild(searchPokemonCard);           
   }
 
 }
