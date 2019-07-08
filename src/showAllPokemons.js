@@ -24,7 +24,7 @@ const pokemonData = POKEMON.pokemon
                 let pokeContent = document.createTextNode(pokeArray[i]);
                 pokeElement.appendChild(pokeContent);
                 elementJoinData.appendChild(pokeElement);
-                document.getElementById("showPokemons")
+                document.getElementById("showAllPokemons")
                                         .appendChild(elementJoinData);
       }
       
