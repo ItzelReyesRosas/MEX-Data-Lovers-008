@@ -5,6 +5,8 @@
 body {
     margin: 0 auto;
 }
+
+
 #showPokemons, #showFilteredPokemons, #showSortedPokemons {
     width: 100%;
     height: 100%;
@@ -13,7 +15,7 @@ body {
 }
 
 
-.singlePokemon , .singlePokemonCard {
+.singlePokemon  {
     height: 100%;
     width: 30%;
     background-color: tomato;
@@ -27,6 +29,16 @@ body {
     height: 100%;
     width: 30%;
     background-color: blue;
+    margin:.3% auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+.singleFilteredPokemon  {
+    height: 100%;
+    width: 30%;
+    background-color: green;
     margin:.3% auto ;
     display: flex;
     flex-direction: column;

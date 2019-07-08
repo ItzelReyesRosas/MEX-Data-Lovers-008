@@ -18,32 +18,39 @@
 
   <section>
 
-        <form>
+        <form id="mainForm"> 
               <label for="pokemonName">Busca a tu pokemon</label>
-              <input type="text" id="pokemonName" placeholder="Escribe el nombre de tu pokemon"  value="" required>
+              <input type="text" id="pokemonName" placeholder="nombre"  value="" required>
               <button id="searchPokemon">BUSCAR</button>
+
+              <button id="spawnTime">Mejor hora para atraparlos</button>
+              <button id="spawnChance">Mayor robabilidad de avistamiento </button>
+              
         </form> 
-        <!--hacer botones de filtrado-->
-        <!--BOTON RESEAT-->
-
-
-        <!--CONTENEDOR DEL GRID Y TODOS LOS ELEMENTOS DENTRO VAN A FUNCIONAR COMO CELDAS--> 
-        
-        <!--section de pokemon buscado-->
-        
+       
+        <section id="showFilteredPokemonsByType"></section>
         <section id="showFilteredPokemons"></section>
-
         <section id="showPokemons"></section>
         <section id="showSortedPokemons"></section>
         
+
   </section>
 
 
 
   <!--SCRIPTS-->
   <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
+  <!--FUNCIONA SOLO FALTA SIG EVOLUCION--><script type="text/javascript" src="filteredByName.js"></script>
+
+
+  
+  <!--FUNCIONA<script type="text/javascript" src="showPokemons.js"></script>-->
+  <!--FUNCIONA<script type="text/javascript" src="sortPokemonsBySpawnChance.js"></script>-->
+  <!--FUNCIONA<script type="text/javascript" src="sortPokemonsBySpawnTime.js"></script>-->
+  <!--<script type="text/javascript" src="filterByType.js"></script>-->
+
   <script type="text/javascript" src="data.js"></script>
-  <script type="text/javascript" src="main.js"></script>
+
   
 
 </body>
