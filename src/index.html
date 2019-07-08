@@ -11,33 +11,43 @@
 
   <body>
   
-   <div class="header">
-      <h1>POKÉMON</h1>
-    </div>
+   <header class="header">
+      <h1>POKÉMON</h1>  
+      <nav> <!--hacer menu de anvorguesa-->  </nav>
+   </header>
 
-  <form>
-    <label for="pokemonName">Busca a tu pokemon</label>
-    <input type="text" id="pokemonName" placeholder="Escribe el nombre de tu pokemon"  value="">
-    <button id="searchPokemon">BUSCAR</button>
-  </form> 
+  <section>
 
-  <!--CONTENEDOR DEL GRID Y TODOS LOS ELEMENTOS DENTRO VAN A FUNCIONAR COMO CELDAS-->
-  <!--hacer menu de anvorguesa-->  
-  <!--hacer botones de filtrado-->
+        <form id="mainForm"> 
+              <label for="pokemonName">Busca a tu pokemon</label>
+              <input type="text" id="pokemonName" placeholder="nombre"  value="" required>
+              <button id="searchPokemon">BUSCAR</button>
 
-  <!--section de pokemon buscado-->
-  <section id="showFilteredPokemon"></section>
- 
+              <button id="spawnTime">Mejor hora para atraparlos</button>
+              <button id="spawnChance">Mayor robabilidad de avistamiento </button>
+              
+        </form> 
 
-  <section id="showPokemons"></section>
+        
+        <section id="showSortedPokemons"></section>
+        <section id="showFilteredPokemons"></section>
+        <section id="showFilteredPokemonsByType"></section>
+       
+        <section id="showAllPokemons"></section>
+        
+
+  </section>
+
 
 
   <!--SCRIPTS-->
   <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
+  <script type="text/javascript" src="filteredByName.js"></script>
+  <script type="text/javascript" src="showAllPokemons.js"></script>
+  <script type="text/javascript" src="sortPokemonsBySpawnChance.js"></script>
+  <script type="text/javascript" src="sortPokemonsBySpawnTime.js"></script>
+    <!--<script type="text/javascript" src="filterByType.js"></script>-->
+  
   <script type="text/javascript" src="data.js"></script>
-  <script type="text/javascript" src="main.js"></script>
-  
-
-  
 </body>
 </html>
