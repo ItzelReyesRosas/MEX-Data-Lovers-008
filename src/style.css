@@ -7,7 +7,7 @@ body {
 }
 
 
-#showAllPokemons, #showFilteredPokemons, #showSortedPokemons ,#showFilteredPokemonsByType {
+#showAllPokemons, #showFiltereByName, #showSortedPokemons ,#showFilteredPokemonsByType {
     width: 100%;
     height: 100%;
     display: flex;
@@ -35,10 +35,19 @@ body {
     align-items: center;        
 }
 
-.singleFilteredPokemon  {
+.singleBySpawnChance {
     height: 100%;
     width: 30%;
-    background-color: green;
+    background-color:green;
+    margin:.3% auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+.filteredByName {
+    height: 100%;
+    width: 30%;
+    background-color: pink;
     margin:.3% auto ;
     display: flex;
     flex-direction: column;

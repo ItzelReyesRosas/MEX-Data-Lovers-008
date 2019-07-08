@@ -10,7 +10,7 @@ const sortedBySpawnChance = pokemonDataS.sort( (a,b) => {
 
 const createNodes2 = sortedBySpawnChance.forEach( (poke2) => {
       var elementJoinSortedData =  document.createElement("div");
-      elementJoinSortedData.setAttribute("class","singleSortedPokemon");
+      elementJoinSortedData.setAttribute("class","singleBySpawnChance");
       var pokeArray2 = [poke2.name,"img",poke2.spawn_chance];
 
 for (var i = 0; i < pokeArray2.length; i++) {

@@ -10,6 +10,8 @@ const createNodes = (place) => {
   
 
    var searchPokemonCard = document.createElement("div");
+   searchPokemonCard.setAttribute("class","filteredByName");
+
    var placeArray = ["name","img","type","height","weight","weaknesses","candy_count","next_evolution"]
   
    for (let i = 0; i < keysExtraction.length; i++) {
