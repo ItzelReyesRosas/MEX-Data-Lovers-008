@@ -1,7 +1,7 @@
 # PROCESO CREATIVO
  
-**Para llevar acabo nuestra investigación usamos un poco de distintas metodologías, UX Research, Lean UX y Design Thinking
-El primer paso fue elegir el tema , el que más nos llamó la atención fue Pokemon Go, una vez lo decidimos comenzamos a revisar la data proporcionada y a pensar en el usuario.**
+**Para llevar acabo nuestra investigación usamos un poco de distintas metodologías, UX Research, Lean UX y Design Thinking.**
+**El primer paso fue elegir el tema , el que más nos llamó la atención fue Pokemon Go, una vez lo decidimos comenzamos a revisar la data proporcionada y a pensar en el usuario.**
 
 ## ¡A JUGAR!
 
@@ -180,10 +180,10 @@ https://marvelapp.com/54dd82c/screen/58742576
 - [x] Array.sort en MDN
 - [x] Array.map en MDN
 - [x] Array.filter en MDN
-- [ ] Array.reduce en MDN
+- [x] Array.reduce en MDN
 - [x] Array.forEach en MDN
 - [x] Object.keys en MDN
-- [ ] Object.entries en MDN
+- [x] Object.entries en MDN
 - [ ] Fetch API en MDN
 - [ ] json.org
 
@@ -197,15 +197,15 @@ https://marvelapp.com/54dd82c/screen/58742576
 
 ## Checklist
 
-- [ ] Usa VanillaJS.
-- [ ] No hace uso de this.
+- [x] Usa VanillaJS.
+- [x] No hace uso de this.
 - [ ] Pasa linter (npm pretest)
 - [ ] Pasa tests (npm test)
 - [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
 - [ ] Incluye Definición del producto clara e informativa en README.md.
 - [ ] Incluye historias de usuario en README.md.
-- [X] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
-- [ ] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
+- [x] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
+- [x] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
 - [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
 - [x] UI: Permite ordenar data por uno o más campos (asc y desc)

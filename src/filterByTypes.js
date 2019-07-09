@@ -91,109 +91,135 @@ const getSelectedValue = () => {
 
   if (selectedValue === "Grass") {
     var filterGrass = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Grass";
-      
+      for (let i = 0; i < c.type.length; i++) {
+         if  (c.type[i] === "Grass") {
+            return true; } } 
+            return false;
+       }) ;
+       createNodesType(filterGrass)  
+       return filterGrass
 
-       }) 
-
-       createNodesType(filterGrass)
-
-  } else if (selectedValue === "Psychic") {
+       } 
+        else if (selectedValue === "Psychic") {
     var filterPsychic = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Psychic";
-       }) 
-
+      for (let i = 0; i< c.type.length; i++) {
+      if (c.type[i] === "Psychic") {
+        return true }}
+        return false;
+       }); 
        createNodesType(filterPsychic)
        
   } else if (selectedValue === "Poison") {
     var filterPoison = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Poison";
-       }) 
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Poison" ) {
+          return true}}
+          return false;
+        });
+        createNodesType(filterPoison)
 
-       createNodesType(filterPoison)
-       
-  } else if (selectedValue === "Water") {
+      } else if (selectedValue === "Water") {
     var filterWater = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Water";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Water" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterWater)
        
   } else if (selectedValue === "Ghost") {
     var filterGhost = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Ghost";
-       }) 
-
-       createNodesType(filterGhost)
-       
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Ghost" ) {
+          return true}}
+          return false;
+        });
+       createNodesType(filterGhost)   
   } else if (selectedValue === "Ground") {
     var filterGround = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Ground";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Ground" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterGround)
        
-  } else if (selectedValue === "Rock") {
-    var filterRock = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Rock";
-       }) 
-
-       createNodesType(filterRock)
        
   } else if (selectedValue === "Rock") {
     var filterRock = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Rock";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Rock" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterRock)
        
-  } else if (selectedValue === "Flying") {
+       
+  }  else if (selectedValue === "Flying") {
     var filterFlying = pokemonDataType.filter( (c) => {
-      return c.type[1] === "Flying";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Flying" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterFlying)
        
   } else if (selectedValue === "Dragon") {
     var filterDragon = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Dragon";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Dragon" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterDragon)
+       
        
   } else if (selectedValue === "Bug") {
     var filterBug = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Bug";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Bug" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterBug)
+       
        
   } else if (selectedValue === "Fire") {
     var filterFire = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Fire";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Fire" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterFire)
        
   } else if (selectedValue === "Electric") {
     var filterElectric = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Electric";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Electric" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterElectric)
+       
        
   } else if (selectedValue === "Ice") {
     var filterIce = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Ice";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Ice" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterIce)
+       
        
   }  else if (selectedValue === "Normal") {
     var filterNormal = pokemonDataType.filter( (c) => {
-      return c.type[0] === "Normal";
-       }) 
-
+      for (let i = 0; i < c.type.length; i++) {
+        if (c.type[i] === "Normal" ) {
+          return true}}
+          return false;
+        });
        createNodesType(filterNormal)
        
   }
