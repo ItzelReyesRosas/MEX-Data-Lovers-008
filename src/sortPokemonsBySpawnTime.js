@@ -1,42 +1,42 @@
-const pokemonDataT = POKEMON.pokemon
+const pokemonDataSpawnTime = POKEMON.pokemon
 
 // SORT FUNCTION por hora, falta parsearlo, para darle orden
 
 const spawnTime = () => {
 
-const sortedBySpawnTime = pokemonDataT.sort( (a,b) => {
+const sortedBySpawnTime = pokemonDataSpawnTime.sort( (a,b) => {
    
     return  b.spawn_time - a.spawn_time
       
  });
 
-const createNodes2 = sortedBySpawnTime.forEach( (poke2) => {
-      var elementJoinSortedData =  document.createElement("div");
-      elementJoinSortedData.setAttribute("class","singleSortedPokemon");
-      var pokeArray2 = [poke2.name,"img",poke2.spawn_time];
+const createNodes3 = sortedBySpawnTime.forEach( (poke2) => {
+      var elementJoinSortedBySpawnTime =  document.createElement("div");
+      elementJoinSortedBySpawnTime.setAttribute("class","singleSortedPokemon");
+      var pokeArraySpawnTime = [poke2.name,"img",poke2.spawn_time];
 
-for (var i = 0; i < pokeArray2.length; i++) {
+for (var i = 0; i < pokeArraySpawnTime.length; i++) {
   
-        if (pokeArray2[i]==="img"){
+        if (pokeArraySpawnTime[i]==="img"){
                   
-          var pokeSortedElement = document.createElement("img");
-          pokeSortedElement.setAttribute("src", poke2.img);
-          pokeSortedElement.setAttribute("class","pokeSortedImg" )
+          var pokeElementSpawnTime = document.createElement("img");
+          pokeElementSpawnTime.setAttribute("src", poke2.img);
+          pokeElementSpawnTime.setAttribute("class","pokeSortedImg" )
 
-        }else if (pokeArray2[i]===poke2.name) {
-          var pokeSortedElement = document.createElement("p");
-          pokeSortedElement.setAttribute("class", "pokeSortedName");
+        }else if (pokeArraySpawnTime[i]===poke2.name) {
+          var pokeElementSpawnTime = document.createElement("p");
+          pokeElementSpawnTime.setAttribute("class", "pokeSortedName");
         }  else {
-          var pokeSortedElement = document.createElement("p");
-          pokeSortedElement.setAttribute("class", "pokeSortedSpawnChance");
+          var pokeElementSpawnTime = document.createElement("p");
+          pokeElementSpawnTime.setAttribute("class", "pokeSortedSpawnChance");
          
 
         }
-          let pokeSortedContent = document.createTextNode(pokeArray2[i]);        
-          pokeSortedElement.appendChild(pokeSortedContent);
-          elementJoinSortedData.appendChild(pokeSortedElement);
-          document.getElementById("showSortedPokemons")
-                                  .appendChild(elementJoinSortedData);
+          let pokeContentSpawnTime = document.createTextNode(pokeArraySpawnTime[i]);        
+          pokeElementSpawnTime.appendChild(pokeContentSpawnTime);
+          elementJoinSortedBySpawnTime.appendChild(pokeElementSpawnTime);
+          document.getElementById("showSortedPokemonsByTime")
+                                  .appendChild(elementJoinSortedBySpawnTime);
 }
 
 });

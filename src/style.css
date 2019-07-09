@@ -7,7 +7,11 @@ body {
 }
 
 
-#showAllPokemons, #showFiltereByName, #showSortedPokemons ,#showFilteredPokemonsByType {
+#showAllPokemons, 
+#showFiltereByName, 
+#showSortedPokemonsByTime ,
+#showSortedPokemonsByChance,
+#showFilteredPokemonsByType {
     width: 100%;
     height: 100%;
     display: flex;
@@ -54,7 +58,15 @@ body {
     align-items: center;        
 }
 
-
+.singleType {
+    height: 100%;
+    width: 30%;
+    background-color: purple;
+    margin:.3% auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
 p {
     font-size: 2rem;
     text-align: center;
