@@ -22,18 +22,17 @@
               <label for="pokemonName">Busca a tu pokemon</label>
               <input type="text" id="pokemonName" placeholder="nombre"  value="" required>
               <button id="searchPokemon">BUSCAR</button>
-
               <button id="spawnTime">Mejor hora para atraparlos</button>
               <button id="spawnChance">Mayor robabilidad de avistamiento </button>
-              
+
         </form> 
 
-        
-        <section id="showSortedPokemons"></section>
-        <section id="showFilteredPokemons"></section>
-        <section id="showFilteredPokemonsByType"></section>
-       
+        <section id="showFilteredPokemonsByName"></section>
+        <section id="showSortedPokemonsByChance"></section>
+        <section id="showSortedPokemonsByTime"></section>
+        <section id="showFilteredPokemonsByType"></section>       
         <section id="showAllPokemons"></section>
+     
         
 
   </section>
@@ -41,13 +40,14 @@
 
 
   <!--SCRIPTS-->
+  
   <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+   
+  <script type="text/javascript" src="filterByTypes.js"></script>
   <script type="text/javascript" src="filteredByName.js"></script>
   <script type="text/javascript" src="showAllPokemons.js"></script>
   <script type="text/javascript" src="sortPokemonsBySpawnChance.js"></script>
-  <script type="text/javascript" src="sortPokemonsBySpawnTime.js"></script>
-    <!--<script type="text/javascript" src="filterByType.js"></script>-->
-  
-  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="sortPokemonsBySpawnTime.js"></script> -->
 </body>
 </html>
