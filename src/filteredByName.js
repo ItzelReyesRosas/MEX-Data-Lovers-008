@@ -4,76 +4,100 @@ const pokemonDataN = POKEMON.pokemon
 const createNodes = (place) => {
   
   
-   let keysExtractionName = Object.keys(place[0])
-   let valuesExtractionName = Object.values(place[0])
-  console.log(valuesExtractionName);
-  
+            const allDataName = place.forEach( (pokeName) => {
+              var elementJoinDataName =  document.createElement("div");
+              elementJoinDataName.setAttribute("class","singleName");
+              var elementJoinDataNameBack = document.createElement("div");
+              elementJoinDataNameBack.setAttribute("class","singleNameBack");
 
-   var searchPokemonCard = document.createElement("div");
-   searchPokemonCard.setAttribute("class","filteredByName");
-
-   var placeArrayName = ["name","img","type","height","weight","weaknesses","candy_count","next_evolution"]
-  
-   for (let i = 0; i < keysExtractionName.length; i++) {
-   
-                   if (keysExtractionName[i]=== placeArrayName[1]) {
+              var pokeArrayName = [pokeName.name,"img"]
+              var pokeArrayBack = [pokeName.height,
+                                    pokeName.weight,
+                                    pokeName.candy_count,
+                                    pokeName.spawn_chance,
+                                    pokeName.spawn_time,
+                                    pokeName.type[0], //solo una posicion, ciclo for adentro
+                                    pokeName.weaknesses[0], //solo una posicion, ciclo for adentro
+                                    //pokeName.prev_evolution[0].name No entra
+                                   
+                                    ]
+                            
+                                    console.log(pokeName.weaknesses);
+                                    
                         
-                     var elementName = document.createElement("img"); 
-                     elementName.setAttribute("src",valuesExtractionName[i]);
-                     elementName.setAttribute("class", keysExtractionName[i]+ "en");
-                               
-                      var contentName = document.createTextNode(keysExtractionName[i]    +  ": "  +
-                      valuesExtractionName[i]);          
-            elementName.appendChild(contentName); 
-            searchPokemonCard.appendChild(elementName);
+            for (var i = 0; i < pokeArrayName.length; i++) {
+              
+                    if (pokeArrayName[i]==="img"){
+                              
+                      var pokeElementName = document.createElement("img");
+                      pokeElementName.setAttribute("src", pokeName.img);
+                      pokeElementName.setAttribute("class","pokeImg" )
+                    } else {
+                      var pokeElementName = document.createElement("p");
+                      pokeElementName.setAttribute("class", "pokeName");
+                    }
+                    
+                    
+                     let pokeContentName = document.createTextNode(pokeArrayName[i]);
+                      pokeElementName.appendChild(pokeContentName);
+                      elementJoinDataName.appendChild(pokeElementName);
+                      document.getElementById("showFilteredPokemonsByName")
+                                              .appendChild(elementJoinDataName);
+          
+                    }
 
-            document.getElementById("showFilteredPokemonsByName").appendChild(searchPokemonCard);    
+        
 
-                  }  else if   (keysExtractionName[i]=== placeArrayName[7] )
-                                                          
-                               {                     
-                      var elementName = document.createElement("p");
-                      elementName.setAttribute("class",keysExtractionName[i]);
-                                            
-                      var contentName = document.createTextNode(keysExtractionName[i]    +  ": "  +
-                      valuesExtractionName[i][0].name);          
-            elementName.appendChild(contentName); 
-            searchPokemonCard.appendChild(elementName);
-                      
-                      var element2Name = document.createElement("p");
-                      element2Name.setAttribute("class",keysExtractionName[i]);
-                      var content2Name = document.createTextNode(keysExtractionName[i]    +  ": "  +
-                      valuesExtractionName[i][1].name);          
-            element2Name.appendChild(content2Name); 
-            searchPokemonCard.appendChild(element2Name);
+                for (var i = 0; i < pokeArrayBack.length; i++) {
+                  if  (pokeArrayBack[i]=== pokeName.height) {
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class", "pokeName");
+                    pokeElementNameBack.innerHTML = "Altura " + ": ";
+                  } else if (pokeArrayBack[i]=== pokeName.weight) {
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class", "pokeName");
+                    pokeElementNameBack.innerHTML = "Peso " + ": ";
+                  } else if (pokeArrayBack[i]===pokeName.candy_count){
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.innerHTML = "Caramelos " + ": ";
+                  } else if (pokeArrayBack[i]===pokeName.spawn_chance){
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.innerHTML = "Probabilidad de avistamiento " + ": " + "%";
+                  
+                  } else if (pokeArrayBack[i]===pokeName.spawn_time){
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.innerHTML = "Mejor hora de avistamiento : " ;
+                  }  else if (pokeArrayBack[i]===pokeName.type[0]){
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.innerHTML = "Tipos principal " + ": ";
+
+                  } else if (pokeArrayBack[i]===pokeName.weaknesses[0]){
+                    var pokeElementNameBack = document.createElement("p");
+                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.innerHTML = "Debilidades " + ": ";
+
+                  } 
+                    let pokeContentNameBack = document.createTextNode(pokeArrayBack[i]);
+                    pokeElementNameBack.appendChild(pokeContentNameBack);
+                    elementJoinDataNameBack.appendChild(pokeElementNameBack);
+                    document.getElementById("showFilteredPokemonsByName")
+                                            .appendChild(elementJoinDataNameBack);
+                }
 
 
-            document.getElementById("showFilteredPokemonsByName").appendChild(searchPokemonCard);    
-           
-                  } else if  (  keysExtractionName[i]=== placeArrayName[2] || 
-                                keysExtractionName[i]=== placeArrayName[3] ||
-                                keysExtractionName[i]=== placeArrayName[4] ||
-                                keysExtractionName[i]=== placeArrayName[5] ||
-                                keysExtractionName[i]=== placeArrayName[6] )
-                  { 
-                    var elementName = document.createElement("p");
-                    elementName.setAttribute("class",keysExtractionName[i]);
-                                          
-                    var contentName = document.createTextNode(keysExtractionName[i]    +  ": "  +
-                    valuesExtractionName[i]);          
-          elementName.appendChild(contentName); 
-          searchPokemonCard.appendChild(elementName);
-                  }
-             
+          })
+            
+            
+            
+          }
+            
       
-   }
+   
  
- }
-
-
-
-
-
  
  
  const showPokemonFilteredByName = () => {

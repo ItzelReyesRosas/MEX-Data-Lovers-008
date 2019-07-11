@@ -46,7 +46,7 @@ const createNodesType = (p) => {
     var elementJoinDataTypes =  document.createElement("div");
     elementJoinDataTypes.setAttribute("class","singleType");
     var pokeArrayTypes = [pokeTypes.name,
-                          "img", 
+                          "img",  
                           pokeTypes.height,
                           pokeTypes.weight];
   
