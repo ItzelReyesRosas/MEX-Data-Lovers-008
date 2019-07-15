@@ -1,14 +1,43 @@
 
 const pokemonDataN = POKEMON.pokemon
  
+
+
+
 const createNodes = (place) => {
   
-  
             const allDataName = place.forEach( (pokeName) => {
+
+
               var elementJoinDataName =  document.createElement("div");
               elementJoinDataName.setAttribute("class","singleName");
               var elementJoinDataNameBack = document.createElement("div");
               elementJoinDataNameBack.setAttribute("class","singleNameBack");
+
+              var elementCard =document.createElement("div");
+              elementCard.setAttribute("class","completeCard");
+              elementCard.appendChild(elementJoinDataNameBack);
+              elementCard.appendChild(elementJoinDataName);
+
+
+
+             /* var ponerclase = () => {
+                  
+                frente.classList.add('frente');
+                atras.classList.add('atras'); 
+                console.log("holi frente");
+                
+                
+              }
+              
+              
+              var quitarclase = () => {
+                frente.classList.remove('frente');
+                atras.classList.remove('atras');
+                console.log("holi tras");
+
+                
+              }*/
 
               var pokeArrayName = [pokeName.name,"img"]
               var pokeArrayBack = [pokeName.height,
@@ -22,7 +51,7 @@ const createNodes = (place) => {
                                    
                                     ]
                             
-                                    console.log(pokeName.weaknesses);
+                                   // console.log(pokeName.weaknesses);
                                     
                         
             for (var i = 0; i < pokeArrayName.length; i++) {
@@ -42,7 +71,9 @@ const createNodes = (place) => {
                       pokeElementName.appendChild(pokeContentName);
                       elementJoinDataName.appendChild(pokeElementName);
                       document.getElementById("showFilteredPokemonsByName")
-                                              .appendChild(elementJoinDataName);
+                                              .appendChild(elementCard);
+                                              
+                                          //  var frente = document.querySelector(".singleName")       
           
                     }
 
@@ -51,70 +82,116 @@ const createNodes = (place) => {
                 for (var i = 0; i < pokeArrayBack.length; i++) {
                   if  (pokeArrayBack[i]=== pokeName.height) {
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class", "pokeName");
+                    pokeElementNameBack.setAttribute("class", "pokeNameBack");
                     pokeElementNameBack.innerHTML = "Altura " + ": ";
                   } else if (pokeArrayBack[i]=== pokeName.weight) {
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class", "pokeName");
+                    pokeElementNameBack.setAttribute("class", "pokeNameBack");
                     pokeElementNameBack.innerHTML = "Peso " + ": ";
                   } else if (pokeArrayBack[i]===pokeName.candy_count){
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.setAttribute("class","pokeNameBack");
                     pokeElementNameBack.innerHTML = "Caramelos " + ": ";
                   } else if (pokeArrayBack[i]===pokeName.spawn_chance){
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.setAttribute("class","pokeNameBack");
                     pokeElementNameBack.innerHTML = "Probabilidad de avistamiento " + ": " + "%";
                   
                   } else if (pokeArrayBack[i]===pokeName.spawn_time){
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.setAttribute("class","pokeNameBack");
                     pokeElementNameBack.innerHTML = "Mejor hora de avistamiento : " ;
                   }  else if (pokeArrayBack[i]===pokeName.type[0]){
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class","pokeName");
-                    pokeElementNameBack.innerHTML = "Tipos principal " + ": ";
+                    pokeElementNameBack.setAttribute("class","pokeNameBack");
+                    pokeElementNameBack.innerHTML = "Tipo principal " + ": ";
 
                   } else if (pokeArrayBack[i]===pokeName.weaknesses[0]){
                     var pokeElementNameBack = document.createElement("p");
-                    pokeElementNameBack.setAttribute("class","pokeName");
+                    pokeElementNameBack.setAttribute("class","pokeNameBack");
                     pokeElementNameBack.innerHTML = "Debilidades " + ": ";
 
                   } 
                     let pokeContentNameBack = document.createTextNode(pokeArrayBack[i]);
                     pokeElementNameBack.appendChild(pokeContentNameBack);
                     elementJoinDataNameBack.appendChild(pokeElementNameBack);
+                   
+
                     document.getElementById("showFilteredPokemonsByName")
-                                            .appendChild(elementJoinDataNameBack);
+                                            .appendChild(elementCard);
+
+                                            //var atras = document.querySelector(".singleNameBack")
+
+                                            
+              
+              
                 }
+               
+               
+               
+            
+
+               
+               /* frente.addEventListener("click", ponerclase);
+                atras.addEventListener("click", quitarclase);*/
+
+                
+                
+                
+
+                
+                
+                
 
 
-          })
+                
+                
+
+  
+              })
             
-            
-            
-          }
-            
+          
+          
+        }
+        
       
-   
+
+  
  
  
  
- const showPokemonFilteredByName = () => {
-       let searchedPokemon = document.getElementById("pokemonName").value;
+ var showPokemonFilteredByName = () => {
+ 
+       var searchedPokemon = document.getElementById("pokemonName").value;
            
-       let searchedPokemonConverted = searchedPokemon[0]               .toUpperCase() +
+       var searchedPokemonConverted = searchedPokemon[0]               .toUpperCase() +
                                       searchedPokemon.slice(1)         .toLowerCase()
        
        var filteredPokemonByName = pokemonDataN
-                                     .filter(      (filtered) => {
-                                                                 return filtered.name === searchedPokemonConverted;
-                                                                 })      
-                                                                 
-     
+                       .filter(      (filtered) => {
+                              return filtered.name === searchedPokemonConverted;
+                                                                 })     
+                                                                  
+          /*if (frente) {
+            console.log("HOLI CAS CASI");
+            var frente = document.querySelector(".singleName") 
+            var atras = document.querySelector(".singleNameBack")
+          frente.addEventListener("click", ponerclase);
+          atras.addEventListener("click", quitarclase);
+        }else{
+          console.log("holi aún no");
+          var frente = document.querySelector(".singleName") 
+          var atras = document.querySelector(".singleNameBack")
+          console.log(frente);
+          console.log(atras);
+    
+        }                      */     
+
        event.preventDefault();  
             
        createNodes(filteredPokemonByName);    
+
+        return showPokemonFilteredByName
        
      
  }
@@ -122,6 +199,8 @@ const createNodes = (place) => {
 
  const filterPokemonByName =document.getElementById("searchPokemon");
  filterPokemonByName.addEventListener("click",showPokemonFilteredByName);
+
+
  
  
 

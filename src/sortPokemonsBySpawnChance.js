@@ -1,8 +1,15 @@
 const pokemonDataSpawnChance = POKEMON.pokemon
 
+
 const spawnChance = () => {
 
+  deletePokemons()
+
 const sortedBySpawnChance = pokemonDataSpawnChance.sort( (a,b) => {
+
+
+  
+
    
     return  b.spawn_chance  - a.spawn_chance
       

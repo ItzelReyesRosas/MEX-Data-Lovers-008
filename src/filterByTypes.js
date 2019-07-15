@@ -1,12 +1,20 @@
 const pokemonDataType = POKEMON.pokemon
 
-console.log(pokemonDataType); //un areglo de objetos, cada objeto es un pokemon
+
+
+
+
+
 
 const createOptionNodes = () => {
+
+
+
     var elementJoinSelectors = document.createElement("select"); 
     elementJoinSelectors.setAttribute("id","selector");
+    elementJoinSelectors.setAttribute("class","selectorBox")
     elementJoinSelectors.setAttribute("onchange" , "getSelectedValue();")  
-  var typesArray = ["Tipo de Pokémon",
+  var typesArray = ["Tipos",
                     "Grass",
                     "Psychic",
                     "Water",
@@ -35,12 +43,13 @@ const createOptionNodes = () => {
   } 
 
 
-  document.getElementById("mainForm").appendChild(elementJoinSelectors);  
+  document.getElementById("selectorTypes").appendChild(elementJoinSelectors);  
   }
   createOptionNodes()
 
 //__________________________________________________
 const createNodesType = (p) => {
+  deletePokemons()
 
   const allDataTypes = p.forEach( (pokeTypes) => {
     var elementJoinDataTypes =  document.createElement("div");

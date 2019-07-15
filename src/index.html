@@ -2,51 +2,78 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers CLON</title>
+    <title>MONSTER COMPARE</title>
     <link rel="stylesheet" href="style.css"/>
-    
-    
     <link href="https://fonts.googleapis.com/css?family=Schoolbell&display=swap" rel="stylesheet"> 
- 
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
   
    <header class="header">
-      <h1 id="pokemon">POKÉMON</h1>  
-      <nav> <!--hacer menu de anvorguesa-->  </nav>
+      <img id="banner" src="Imagenes/bannerfinal.jpg" alt="">    
+     
    </header>
 
   <section>
 
-        <form id="mainForm"> 
-              <label for="pokemonName">Busca a tu pokemon</label>
-              <input type="text" id="pokemonName" placeholder="nombre"  value="" required>
-              <button id="searchPokemon">BUSCAR</button>
-              <button id="spawnTime">Mejor hora para atraparlos</button>
-              <button id="spawnChance">Mayor robabilidad de avistamiento </button>
-
+    <!--Script de calculo -->
+    
+      
+  
+  <form id="mainForm"> 
+             
+          <button id="sabiasQue" class="button">¿Sabías que...?</button>
+          <button id="spawnTime" class="button"> ¡Atrápalos! </button>
+          <button id="spawnChance" class="button">+ Avistamientos</button>
+          <div id="selectorTypes"></div>
+          <input type="text" id="pokemonName" placeholder="Nombre del pokémon"  value="" required>
+          <button id="searchPokemon">
+              <img src="https://img.icons8.com/material-outlined/24/000000/search.png">
+          </button>
+ 
+               
         </form> 
 
         <section id="showFilteredPokemonsByName"></section>
-        <section id="showSortedPokemonsByChance"></section>
+        <section>
+          <p id = "text"></p>
+          <div  id="showSortedPokemonsByChance"></div>
+        </section>
         <section id="showSortedPokemonsByTime"></section>
         <section id="showFilteredPokemonsByType"></section>       
-        <section id="showAllPokemons"></section>
-    
-  </section>
+       <section id="showAllPokemons"></section>
+      
+       <section id="chart">
+        <div id="columnchart_values"></div> </div>
+          <br><br><br><br><br><br><br><br>
+      
+          <div id="piechart">  </div> 
+        </section>   
+        
+
+  </section> 
+
+
   <!--SCRIPTS-->
   
-  <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
   <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="data/pokemon/pokemon.js"></script>
+  
+    <script type="text/javascript" src="showAllPokemons.js"></script>
+    <script type="text/javascript" src="filterByTypes.js"></script>
+    <script type="text/javascript" src="filteredByName.js"></script>
+    <script type="text/javascript" src="sortPokemonsBySpawnChance.js"></script>
+      
+     
+    <script type="text/javascript" src="sortPokemonsBySpawnTime.js"></script>
    
-  <script type="text/javascript" src="filterByTypes.js"></script>
-  <script type="text/javascript" src="filteredByName.js"></script>
-  <script type="text/javascript" src="showAllPokemons.js"></script>
-  <script type="text/javascript" src="sortPokemonsBySpawnChance.js"></script>
-  <script type="text/javascript" src="sortPokemonsBySpawnTime.js"></script>
-  <script type="text/javascript" src="statisticsBySpawnTime.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript" src="statisticsBySpawnTime.js"></script>
 
 </body>
+
+<footer>
+
+</footer>
 </html>

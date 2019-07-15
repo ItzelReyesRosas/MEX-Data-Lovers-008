@@ -1,4 +1,4 @@
-# PROCESO CREATIVO
+# :bulb: PROCESO CREATIVO
  
 **Para llevar acabo nuestra investigación usamos un poco de distintas metodologías, UX Research, Lean UX y Design Thinking.**
 **El primer paso fue elegir el tema , el que más nos llamó la atención fue Pokemon Go, una vez lo decidimos comenzamos a revisar la data proporcionada y a pensar en el usuario.**
@@ -111,7 +111,6 @@
 
 <img src="src/Imagenes/historiaUsuario.jpg">
 
-
 ## ANÁLISIS DE LA COMPETENCIA
 
 **Las aplicaciones que existen en el mercado son principalmente para medir el IV de los pokemones, sin embargo ninguna de ellas lo hace de forma comparativa sino de forma individual.**
@@ -162,12 +161,16 @@
 
 https://marvelapp.com/54dd82c/screen/58742576 
 
+## TESTEOS DE USABILIDAD
+**En las primeras pruebas se integró la búsqueda por tipo, se agredo el valor "required" a el input de búsqueda por nombre.**
+**En las siguientes pruebas se hizo cambio de color siguiendo las recomendaciones de Dení.**
+
 # CHECKLIST
 ### Contenido de referencia
 ## Diseño de experiencia de usuario (User Experience Design)
 
 - [x] Investigación con usuarios / entrevistas
-- [ ] Principios de diseño visual
+- [x] Principios de diseño visual
 
 ## Desarrollo Front-end
 
@@ -202,8 +205,8 @@ https://marvelapp.com/54dd82c/screen/58742576
 - [ ] Pasa linter (npm pretest)
 - [ ] Pasa tests (npm test)
 - [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y lines y branches.
-- [ ] Incluye Definición del producto clara e informativa en README.md.
-- [ ] Incluye historias de usuario en README.md.
+- [x] Incluye Definición del producto clara e informativa en README.md.
+- [x] Incluye historias de usuario en README.md.
 - [x] Incluye sketch de la solución (prototipo de baja fidelidad) en README.md.
 - [x] Incluye Diseño de la Interfaz de Usuario (prototipo de alta fidelidad) en README.md.
 - [ ] Incluye el listado de problemas que detectaste a través de tests de usabilidad en el README.md.
@@ -214,5 +217,5 @@ https://marvelapp.com/54dd82c/screen/58742576
 ## Checklist (Hacker Edition)
 
 - [ ] Consume data de forma dinámica (fetch()).
-- [ ] Utiliza Librerías de graficas (chart.js ó google chart).
+- [x] Utiliza Librerías de graficas (chart.js ó google chart).
 - [ ] Cobertura de coverage al 100%.
