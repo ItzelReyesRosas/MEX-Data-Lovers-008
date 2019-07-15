@@ -1,9 +1,16 @@
 const pokemonDataSpawnTime = POKEMON.pokemon
 
 // SORT FUNCTION por hora, falta parsearlo, para darle orden
+let deletePokemons = () => {
+  let showedPokemons = document.getElementById("showAllPokemons");
+      for (let i = 0 ; i <pokemonDataSpawnTime.length; i++) {
+    showedPokemons.removeChild(showedPokemons.childNodes[0])
+  }
+}
 
 const spawnTime = () => {
 
+deletePokemons()
 const sortedBySpawnTime = pokemonDataSpawnTime.sort( (a,b) => {
    
     return  b.spawn_time - a.spawn_time
